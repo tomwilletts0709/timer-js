@@ -24,5 +24,8 @@ h1 {
 button { 
     cursor: pointer;
     background-color: rgb(26, 104, 153);
+}
 
+.countdownDisplay { 
+    
 }

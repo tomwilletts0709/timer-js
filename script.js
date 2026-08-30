@@ -1,21 +1,24 @@
 
 
+let timerInterval;
 
-document.querySelector('.button').addEventListener("click", function() {
-   interval = setInterval(runTimer)
-})
+const countdownDisplay = document.getElementById("countdownDisplay")
 
-document.querySelector('.button').addEventListener("click", function() {
-   interval = setInterval(runTimer)
-})
+function startTimer() { 
+    clearInterval(timerInterval);
 
+    endtime = Date.now()
+    remainingonPause = null;
 
-function runTimer () {
-    console.log("Timer is Running")
-    clearTimeout(timer)
-}
+    countdown(); 
+    timerInterval = setInterval(countdown, 1000);
 
+    function countdown() { 
+        const remaining = Math.max(0 , endtime );
+        updateDisplay = remaining();
 
-.timer-container {
-    text-align: center ;
+        if (remaining === 0) {
+            clearInterval(timerInterval);
+        } else 
+    }
 }
