@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1 initial-scale=1.0">
-    <title>Timer</title>
+    <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="timer-container" id="timer">
-    <input type="number"  placeholder="Enter Time"/>
-    <button onclick="startTimer()">Start</button> 
+        <div class="timer-ring">
+            <svg class="progress-ring" width="300" height="300">
+            <circle class="progess-ring__background" cx="150" cy="150" r="140"></circle>
+            <circle class="progess-ring__circle" cx="150" cy="150" r="140"></circle>
+            </svg>
+            <div class="timer-display">
+                <div class="timer-time" id="timerDisplay">25:00</div>
+                    <div class="timer-label"></div>
+                </div>
+            </div>
+    <button onclick="startTimer()">Start</button>
     <button onclick="stopTimer()">Stop</button>
-    <section id="countdownDisplay"></section>
+        </div>
     </div>
-<h1>Timer</h1>
+<div class="container">
+<h1>Pomodoro Timer</h1>
+<p>Press the timer and begin your study session</p>
+</div>
 <script src=script.js></script>
 </html>
