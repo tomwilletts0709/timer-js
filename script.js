@@ -4,7 +4,7 @@ let remainingonPause;
 
 let focus_ms = 25 * 60 * 1000
 
-const countdownDisplay = document.getElementById("timer")
+const countdownDisplay = document.getElementById("countdownDisplay")
 
 function startTimer() { 
     clearInterval(timerInterval);
