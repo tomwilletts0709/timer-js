@@ -1,5 +1,5 @@
 body { 
-    background-color: rgb(86, 157, 204);
+    background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column-reverse;
@@ -32,7 +32,7 @@ button {
 
 .progess-ring__background {
     fill: none;
-    stroke: rgb(63, 116, 148);
+    stroke: rgb(0, 0, 0);
     stroke-width: 12;
 }
 
@@ -85,13 +85,4 @@ button {
 
 .btn:active {
     transform: scale(0.98);
-}
-
-
-.start-btn {
-    color: white;
-}
-
-.end-btn {
-    color: white;
 }

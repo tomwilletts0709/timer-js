@@ -100,3 +100,8 @@ function render(state) {
     document.body.dataset.mode = state.mode;
     document.body.dataset.status = state.status;
 }
+
+const resetBtn = document.getElementById('reset-btn');
+resetBtn.addEventListener('click', () => {
+    location.reload();
+})
