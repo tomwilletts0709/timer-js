@@ -6,13 +6,15 @@ body {
     align-items: center;
 }
 
-h1 {
+.container {
     text-align: center;    
     position: relative;
+    color: white;
 }
 
 .timer-container {
-    text-align: center; 
+    text-align: center;
+    color: white;
 }
 
 button { 
@@ -61,4 +63,35 @@ button {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: rgb(208, 215, 219);
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover {
+    background: #222;
+}
+
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+.start-btn {
+    color: white;
+}
+
+.end-btn {
+    color: white;
 }
